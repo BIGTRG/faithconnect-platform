@@ -122,7 +122,7 @@ export function MobileMorePage() {
     : sections;
 
   return (
-    <div className="pb-24 px-1 pt-1 max-w-lg mx-auto">
+    <div className="pb-24 px-1 pt-1 max-w-lg md:max-w-4xl mx-auto">
       <h1 className="text-2xl font-bold mb-3">Explore</h1>
 
       <div className="relative mb-5">
@@ -146,7 +146,7 @@ export function MobileMorePage() {
           <h2 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-3 px-1">
             {section.title}
           </h2>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2">
             {section.items.map((item) => (
               <Link
                 key={item.href}
